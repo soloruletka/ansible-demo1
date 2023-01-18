@@ -19,7 +19,7 @@
       yum_repository:
         name: MariaDB
         description: MariaDB Cuctom repository
-        baseurl: http://yum.mariadb.org/10.5/centos-amd64/
+        baseurl: http://yum.mariadb.org/10.9.4/centos7-amd64/
         gpgkey: https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
         gpgcheck: yes
     - name: Install MySQL packages
@@ -42,4 +42,3 @@
         password: '{{ mysql_user_password }}'
         priv: '{{ db_name }}.*:ALL'
         state: present
-        
